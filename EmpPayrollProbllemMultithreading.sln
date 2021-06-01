@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpPayrollProbllemMultithreading", "EmpPayrollProbllemMultithreading\EmpPayrollProbllemMultithreading.csproj", "{EDC94594-611D-421C-B082-1A2FF0C8ED01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpPayrollProblem-MultiThreadingMSTest", "EmpPayrollProblem-MultiThreadingMSTest\EmpPayrollProblem-MultiThreadingMSTest.csproj", "{082FC922-F016-44DA-8D2C-4DE668F359FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDC94594-611D-421C-B082-1A2FF0C8ED01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC94594-611D-421C-B082-1A2FF0C8ED01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC94594-611D-421C-B082-1A2FF0C8ED01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC94594-611D-421C-B082-1A2FF0C8ED01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082FC922-F016-44DA-8D2C-4DE668F359FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082FC922-F016-44DA-8D2C-4DE668F359FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082FC922-F016-44DA-8D2C-4DE668F359FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082FC922-F016-44DA-8D2C-4DE668F359FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {108D49FE-7EC9-423E-B8F6-23D06BAF8F54}
+	EndGlobalSection
+EndGlobal
