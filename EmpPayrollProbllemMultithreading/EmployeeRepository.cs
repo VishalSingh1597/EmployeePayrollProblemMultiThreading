@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Threading;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace EmpPayrollProbllemMultithreading
 
@@ -50,6 +52,27 @@ namespace EmpPayrollProbllemMultithreading
                     return false;
             }
             return true;
+        }
+
+
+
+        //UC2:- Ability to add multiple employee to payroll DB using Threads so as to get a better response
+         
+
+        public void AddEmployeeListToEmployeePayrollDataBaseWithThread(List<EmployeeModel> employeelList)
+        {
+
+            employeelList.ForEach(employeeData => //For each employeeData present in list new thread is created and all threads run according to the time slot assigned by the thread scheduler.
+            {
+                Task thread = new Task(() =>
+                {
+                    Console.WriteLine("Employee Being added" + employeeData.EmployeeName); // Printing the current thread id being utilised
+                    Console.WriteLine("Current thread id: " + Thread.CurrentThread.ManagedThreadId); // Calling the method to add the data to the address book database
+                    this.AddEmployeeToDataBase(employeeData);
+                    Console.WriteLine("Employee added:" + employeeData.EmployeeName); // Indicating mesasage to end of data addition
+                });
+                thread.Start();
+            });
         }
         public bool AddEmployeeToDataBase(EmployeeModel model)
         {
